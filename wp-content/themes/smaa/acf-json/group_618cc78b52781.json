@@ -1,0 +1,213 @@
+{
+    "key": "group_618cc78b52781",
+    "title": "Block: Länk Tabel",
+    "fields": [
+        {
+            "key": "field_618cc7a93c764",
+            "label": "Bakgrundsfärg",
+            "name": "bakgrunds_farg",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "white": "Vit",
+                "gray": "Grå"
+            },
+            "allow_null": 0,
+            "default_value": "gray",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_618cc78b60ff2",
+            "label": "Rubrik",
+            "name": "table_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_618ccbfa284e3",
+            "label": "Länk",
+            "name": "lank_grid",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 24,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_618ccc43284e4",
+                    "label": "Länktext",
+                    "name": "lank_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_618ccc88284e5",
+                    "label": "URL",
+                    "name": "lank_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_618ccca1284e6",
+                    "label": "Länkikon",
+                    "name": "lank_ikon",
+                    "type": "font-awesome",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "icon_sets": [
+                        "fas",
+                        "far"
+                    ],
+                    "custom_icon_set": "",
+                    "default_label": "&lt;i class=\"fas\"&gt;&amp;#xf105;&lt;\/i&gt; angle-right",
+                    "default_value": "fas fa-angle-right",
+                    "save_format": "element",
+                    "allow_null": 0,
+                    "show_preview": 1,
+                    "enqueue_fa": 1,
+                    "fa_live_preview": "",
+                    "choices": []
+                },
+                {
+                    "key": "field_618ccce9284e7",
+                    "label": "Öppna länk",
+                    "name": "lank_target",
+                    "type": "radio",
+                    "instructions": "Välj \"Ny flik \" eller \"Samma\"",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "new": "Öppna ny flik",
+                        "same": "Öppna i samma"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "same",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                }
+            ]
+        },
+        {
+            "key": "field_618cc78b61082",
+            "label": "Notering under tabell",
+            "name": "table_notes",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Lägg till notering",
+            "sub_fields": [
+                {
+                    "key": "field_618cc78b6dcc5",
+                    "label": "Tabellnotering",
+                    "name": "table_note",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/link-table"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1643619798
+}

@@ -1,0 +1,536 @@
+{
+    "key": "group_61136c87ddafe",
+    "title": "Block: Entry Puffs",
+    "fields": [
+        {
+            "key": "field_61136caf4a886",
+            "label": "Titel",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6213af55f28e6",
+            "label": "Ikon eller egen svg puff 1",
+            "name": "icon_or_svg_1",
+            "type": "button_group",
+            "instructions": "Välj Font Awsome ikon eller ladda upp egen svg",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "icon": "Fa ikon",
+                "svg": "Egen SVG"
+            },
+            "allow_null": 0,
+            "default_value": "icon",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_6140971a3362f",
+            "label": "Puff ikon 1",
+            "name": "puff_ikon_1",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6213af55f28e6",
+                        "operator": "==",
+                        "value": "icon"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "far"
+            ],
+            "custom_icon_set": "",
+            "default_label": "",
+            "default_value": "",
+            "save_format": "element",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 0,
+            "fa_live_preview": "",
+            "choices": []
+        },
+        {
+            "key": "field_6213b008f28e7",
+            "label": "Egen SVG puff 1",
+            "name": "egen_svg_1",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6213af55f28e6",
+                        "operator": "==",
+                        "value": "svg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6113701f4a887",
+            "label": "Puff Text 1",
+            "name": "puff_text_1",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6113703a4a888",
+            "label": "Puff Länk 1",
+            "name": "puff_link_1",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6213b0bef28e8",
+            "label": "Ikon eller egen svg puff 2",
+            "name": "icon_or_svg_2",
+            "type": "button_group",
+            "instructions": "Välj Font Awsome ikon eller ladda upp egen svg",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "icon": "Fa ikon",
+                "svg": "Egen SVG"
+            },
+            "allow_null": 0,
+            "default_value": "icon",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_6140976833630",
+            "label": "Puff Ikon 2",
+            "name": "puff_ikon_2",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6213b0bef28e8",
+                        "operator": "==",
+                        "value": "icon"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "far"
+            ],
+            "custom_icon_set": "",
+            "default_label": "",
+            "default_value": "",
+            "save_format": "element",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 0,
+            "fa_live_preview": "",
+            "choices": []
+        },
+        {
+            "key": "field_6213b19849676",
+            "label": "Egen SVG puff 2",
+            "name": "egen_svg_2",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6213b0bef28e8",
+                        "operator": "==",
+                        "value": "svg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_611370554a889",
+            "label": "Puff Text 2",
+            "name": "puff_text_2",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_611370634a88a",
+            "label": "Puff Länk 2",
+            "name": "puff_link_2",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6213b74c8c9c7",
+            "label": "Ikon eller egen svg puff 3",
+            "name": "icon_or_svg_3",
+            "type": "button_group",
+            "instructions": "Välj Font Awsome ikon eller ladda upp egen svg",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "icon": "Fa ikon",
+                "svg": "Egen SVG"
+            },
+            "allow_null": 0,
+            "default_value": "icon",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_6140979133631",
+            "label": "Puff Ikon 3",
+            "name": "puff_ikon_3",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6213b74c8c9c7",
+                        "operator": "==",
+                        "value": "icon"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "far"
+            ],
+            "custom_icon_set": "",
+            "default_label": "",
+            "default_value": "",
+            "save_format": "element",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 0,
+            "fa_live_preview": "",
+            "choices": []
+        },
+        {
+            "key": "field_6213b77f8c9c9",
+            "label": "Egen SVG puff 3",
+            "name": "egen_svg_3",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6213b74c8c9c7",
+                        "operator": "==",
+                        "value": "svg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_611370754a88b",
+            "label": "Puff Text 3",
+            "name": "puff_text_3",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_611370834a88d",
+            "label": "Puff Länk 3",
+            "name": "puff_link_3",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_6213b7638c9c8",
+            "label": "Ikon eller egen svg puff 4",
+            "name": "icon_or_svg_4",
+            "type": "button_group",
+            "instructions": "Välj Font Awsome ikon eller ladda upp egen svg",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "icon": "Fa ikon",
+                "svg": "Egen SVG"
+            },
+            "allow_null": 0,
+            "default_value": "icon",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_614097a333632",
+            "label": "Puff Ikon 4",
+            "name": "puff_ikon_4",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6213b7638c9c8",
+                        "operator": "==",
+                        "value": "icon"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "far"
+            ],
+            "custom_icon_set": "",
+            "default_label": "",
+            "default_value": "",
+            "save_format": "element",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 0,
+            "fa_live_preview": "",
+            "choices": []
+        },
+        {
+            "key": "field_6213b78c8c9ca",
+            "label": "Egen SVG puff 4",
+            "name": "egen_svg_4",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_6213b7638c9c8",
+                        "operator": "==",
+                        "value": "svg"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_6113707c4a88c",
+            "label": "Puff Text 4",
+            "name": "puff_text_4",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_611370894a88e",
+            "label": "Puff Länk 4",
+            "name": "puff_link_4",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/entry-puffs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1645460735
+}

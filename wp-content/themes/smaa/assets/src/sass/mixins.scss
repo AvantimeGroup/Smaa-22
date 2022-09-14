@@ -1,0 +1,85 @@
+// for bordering elements
+@mixin border($size, $style, $color, $position ) {
+    @if $position == all{
+        border: $size $style $color;
+    }@else{
+        border-#{$position}: $size $style $color;
+    }
+}
+
+// Circule avatar
+@mixin avatar($size, $circle: false) {
+    width: $size;
+    height: $size;
+    @if $circle {
+      border-radius: $size / 2;
+    }
+}
+
+// call to action mixin
+@mixin buttonToAction{
+    border-radius: 1000px;
+}
+
+// slider mixin
+@mixin slider {
+	.owl-item img {
+		@include avatar(200px, true);
+	}
+	.owl-nav{
+		font-size: 2em!important;
+	}
+	.owl-dots{
+		text-align: center;
+		.owl-dot{
+			display: inline-block;
+			@include avatar(10px, true);
+			height: 10px!important;
+			width: 10px!important;
+			background: $color-secondary!important;
+			margin:0px 3px 0;
+			opacity: 0.6;
+			&.active{
+				background: $color-primary;
+				opacity: 1;
+				@include avatar(12px, true);
+				height: 12px!important;
+				width: 12px!important;
+			}
+		}
+	}
+}
+
+// section
+@mixin section($bg_color) {
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding: 80px 0px;
+    background: $bg_color;
+    h3{font-size: 40px; font-family: "Book"; margin-bottom: 50px;}
+}
+
+// buttons
+@mixin buttons($bg, $color, $bgHover,$colorHover){
+	background: $bg;
+	color: $color;
+	border: none;
+	padding: 8px 25px;
+	text-align: center;
+	cursor: pointer;
+	&:hover{
+		background: $bgHover;
+		color: $colorHover;
+	}
+}
+
+// links
+@mixin links($color, $colorHover) {
+	color: $color;
+	text-decoration: none;
+	&:hover{
+		color: $colorHover;
+		text-decoration: none;
+	}
+}

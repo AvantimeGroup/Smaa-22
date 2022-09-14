@@ -1,0 +1,217 @@
+/**
+   CTA Text + BTN 
+ */
+
+.cta-bli-medlam {
+  background: #fafafa 0% 0% no-repeat padding-box;
+  padding: 64px 0 58px 0;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #000000cc;
+  opacity: 1;
+}
+
+.cta-bli-medlam .cta-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cta-bli-medlam .light-blue-ring-25px {
+  display: none;
+}
+.cta-bli-medlam .cta-box {
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.cta-bli-medlam h1 {
+  font: normal normal 40px/56px Gotham-Medium;
+}
+
+.cta-bli-medlam p {
+  margin: auto;
+  padding: 8px;
+  max-width: 560px;
+  font: normal normal 18px/25px Gotham-Book;
+}
+.cta-bli-medlam .block-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 26px 0 14px 0;
+}
+.cta-bli-medlam .block-button {
+  padding: 0 6px;
+}
+.cta-bli-medlam .block-button a {
+  text-align: center;
+  font: normal normal 14px/20px Gotham-Medium;
+  color: #1d1d1b;
+  text-decoration: none;
+}
+
+.cta-bli-medlam .block-button .orange {
+  background-color: #f18e00;
+  border: 2px solid #f18e00;
+  color: #000;
+  border-radius: 21px;
+  padding: 10px 20px 11px 20px;
+}
+.cta-bli-medlam .block-button .orange:hover {
+  color: #fff;
+}
+
+.cta-bli-medlam .block-button .white-btn {
+  background: #fafafa 0% 0% no-repeat padding-box;
+  border: 2px solid #1b1b1a;
+  border-radius: 21px;
+  padding: 10px 46px 11px 46px;
+}
+
+.cta-bli-medlam .block-button {
+  max-width: 327px;
+}
+
+/*  decorations  */
+
+.cta-bli-medlam .blue-ring-50px {
+  border: 14px solid #006082;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+.cta-bli-medlam .blue-ring-25px {
+  border: 8px solid #006082;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+}
+.cta-bli-medlam .light-blue-ring-25px {
+  border: 8px solid #35b1bf;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+}
+
+.cta-bli-medlam .decoration-right {
+  top: 80px;
+  right: 60px;
+
+  display: block;
+  position: relative;
+  z-index: 3;
+  right: 110px;
+  top: 10px;
+}
+.cta-bli-medlam .decoration-right .decoration-cluster {
+  width: 86px;
+  height: 94px;
+  position: absolute;
+}
+.cta-bli-medlam .light-blue-ring-25px {
+  display: none;
+}
+/* decoration cluster positions */
+
+.cta-bli-medlam .decoration-right .decoration-cluster .blue-ring-50px,
+.cta-bli-medlam .decoration-right .decoration-cluster .blue-ring-25px,
+.cta-bli-medlam .decoration-right .decoration-cluster .light-blue-ring-25px {
+  position: absolute;
+}
+.cta-bli-medlam .decoration-right .decoration-cluster .blue-ring-50px {
+  top: 0;
+  right: 0;
+}
+.cta-bli-medlam .decoration-right .decoration-cluster .blue-ring-25px {
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 860px) {
+/*   .cta-bli-medlam .decoration-right {
+    order: 1;
+    position: relative;
+    top: -90px;
+    left: 16px;
+  }
+  .cta-bli-medlam .decoration-right .decoration-cluster {
+    width: 90px;
+    height: 83px;
+  }
+  .cta-bli-medlam .light-blue-ring-25px {
+    display: block;
+    bottom: 0;
+    left: 0;
+  } */
+
+  .cta-bli-medlam .blue-ring-25px {
+    display: none;
+  }
+  .cta-bli-medlam .cta-row {
+    flex-direction: row-reverse;
+  }
+
+ 
+}
+
+@media (max-width: 575.98px) {
+  .cta-bli-medlam {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .cta-bli-medlam .cta-row {
+    flex-direction: row-reverse;
+  }
+  .cta-bli-medlam .block-buttons {
+    justify-content: space-between;
+  }
+  .cta-bli-medlam .block-button {
+    padding: 0 12px;
+  }
+  .cta-bli-medlam h1 {
+    font: normal normal 32px/44px Gotham-Medium;
+  }
+  .cta-bli-medlam p {
+    font: normal normal 18px/24px Gotham-Book;
+  }
+  .cta-bli-medlam .block-button {
+    max-width: 291px;
+  }
+  .cta-bli-medlam .block-button a {
+    font: normal normal 14px/20px Gotham-Medium;
+  }
+
+  /* .cta-bli-medlam .decoration-right {
+    order: 1;
+    position: relative;
+    top: -90px;
+    left: 16px;
+  }
+  .cta-bli-medlam .decoration-right .decoration-cluster {
+    width: 90px;
+    height: 83px;
+  }
+  .cta-bli-medlam .light-blue-ring-25px {
+    display: block;
+    bottom: 0;
+    left: 0;
+  } */
+
+  .cta-bli-medlam .blue-ring-25px {
+    display: none;
+  }
+}
+
+@media (max-width: 412px) {
+  .cta-bli-medlam .light-blue-ring-25px,
+  .cta-bli-medlam .decoration-right,
+  .cta-bli-medlam .decoration-right-right {
+    display: none;
+  }
+  .cta-bli-medlam .block-buttons {
+    flex-direction: column;
+  }
+  .cta-bli-medlam .block-button {
+    padding-bottom: 30px;
+  }
+}

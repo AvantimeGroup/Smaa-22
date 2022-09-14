@@ -1,0 +1,101 @@
+// default menu
+.nav-menu-default{
+    list-style-type: none;
+    display: flex;
+    display: -ms-flexbox;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    .header-item{
+        font-size: 1rem;
+        font-family: "Ghotam-Bold",Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        color: $color-black;
+        &:hover{color: $color-black;}
+    }
+    li{
+       .spanding{
+           display: none;
+           float: right;
+           font-size: 0.875rem;
+        }
+       ul{
+           margin-top: 20px;
+           li{
+                list-style-type: none;
+                margin-left: -40px;
+                a{
+                  font-family: "Ghotam-Book",Arial, Helvetica, sans-serif;
+                  color:$color-black;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        flex-wrap: wrap;
+        li{
+            width: 100%;
+            padding: 14px 0px;
+            border-bottom: 1px solid $color-gray;
+            .spanding{
+                display: block;
+            }
+            ul{
+                display: none;
+                border-top: 1px solid $color-gray;
+                li{border: none;}
+                &.sub-menu.show{display: block;}
+            }
+        }
+    }
+}
+
+// custom menu
+.menu-menu-1-container{margin-top: -7px;}
+.nav-menu-custom{
+    list-style: none;
+    padding: 0;
+    line-height: 4;
+    
+    li {
+      display: inline-block;
+      position: relative;
+      line-height: 21px;
+      text-align: left;
+      padding: 0px 7px;
+  
+      &:hover {
+        @include border(2px, solid, $color-primary, bottom);
+      }
+      a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+  
+      }
+  
+      ul.sub-menu {
+        min-width: 100%;
+        background: $color-white;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+        top: 24px;
+      }
+  
+      &:hover ul.sub-menu {
+        display: block;
+        padding: 5px;
+      }
+  
+      ul.sub-menu li {
+        display: block;
+        margin-left:0px;
+        margin-bottom: 5px;
+      }
+    }
+    @include media-breakpoint-down(sm){
+        display: none;
+    }
+  }

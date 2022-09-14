@@ -1,0 +1,125 @@
+/**
+   Entry Puffs 
+ */
+
+.contact-puffer {
+  padding: 32px 0 48px 0;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #000000cc;
+  text-align: left;
+}
+
+.contact-puffer {
+  padding-left: 16px;
+  padding-right: 14px;
+}
+
+/* background colour */
+.contact-puffer.bg-white {
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.contact-puffer.bg-gray {
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.contact-puffer .puffer-row {
+  position: relative;
+}
+.contact-puffer h2 {
+  text-align: left;
+  font: normal normal 24px/32px Gotham-Medium;
+  letter-spacing: 0px;
+  color: #000000cc;
+  opacity: 1;
+}
+
+.contact-puffer .puff p {
+  margin: 0;
+  padding: 0;
+  font: normal normal 18px/26px Gotham-Bold;
+}
+
+.contact-puffer .puff-wrapper {
+  position: relative;
+  z-index: 5;
+  padding: 0 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 50px;
+
+}
+
+.contact-puffer .puff-wrapper .puff {
+  flex: 1 1 30%;
+  padding: 0 0 12px 0;
+  
+}
+.contact-puffer .puff-wrapper .puff h3 {
+  text-align: left;
+  font: normal normal 18px/28px Gotham-Medium;
+  letter-spacing: 0px;
+  color: #000000cc;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+
+.contact-puffer .puff-wrapper .puff p {
+  font: normal normal 18px/28px Gotham-Book;
+  letter-spacing: 0px;
+  color: #000000cc;
+  opacity: 1;
+  margin-bottom: 4px;
+}
+.contact-puffer .puff-wrapper .puff p a {
+
+  color: #f18e00cc;
+
+}
+
+@media (max-width: 1136px) {
+  .contact-puffer .container-puffs .puff {
+    flex: 1 0 50%;
+  }
+}
+
+@media (max-width: 990px) {
+  .contact-puffer .container-puffs .puff {
+    flex: 1 0 50%;
+  }
+}
+
+@media (max-width: 779px) {
+  .contact-puffer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .contact-puffer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .contact-puffer .container-puffs,
+  .contact-puffer .puff:nth-last-of-type(1),
+  .contact-puffer .puff:nth-last-of-type(2) {
+    padding-bottom: 0;
+  }
+  .contact-puffer h1 {
+    font: normal normal 24px/32px Gotham-Medium;
+  }
+}
+@media (max-width: 575.98px) {
+  .contact-puffer {
+    padding: 64px 24px 77px 24px;
+  }
+  .contact-puffer .container-puffs,
+  .contact-puffer .container-puffs .puff:last-child {
+    padding-bottom: 0;
+  }
+  .contact-puffer .puff-wrapper .puff {
+    flex: 1 0 100%;
+  }
+}

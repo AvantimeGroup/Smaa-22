@@ -1,0 +1,228 @@
+/**
+   Entry Puffs 
+ */
+
+.super-puffer {
+  padding: 32px 0 48px 0;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #000000cc;
+  text-align: center;
+}
+
+.super-puffer {
+  padding-left: 16px;
+  padding-right: 14px;
+}
+
+/* background colour */
+.super-puffer.bg-white {
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.super-puffer.bg-gray {
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.super-puffer .puffer-row {
+  position: relative;
+}
+.super-puffer h2 {
+  font: normal normal 32px/42px Gotham-Medium;
+}
+
+.super-puffer .puff p {
+  margin: 0;
+  padding: 0;
+  font: normal normal 18px/26px Gotham-Bold;
+}
+.super-puffer .decoration-wrapper {
+  position: relative;
+}
+.super-puffer .puff-wrapper {
+  position: relative;
+  z-index: 5;
+  padding: 42px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 50px;
+}
+
+.super-puffer .puff-wrapper .puff {
+  background: rgba(254, 246, 235, 1) 0% 0% no-repeat padding-box;
+  border: 1px dashed rgba(255, 255, 255, 1);
+  border-radius: 29px;
+  opacity: 1;
+  width: 223px;
+  height: 368px;
+  padding: 36px 0 22px 0;
+}
+.super-puffer .puff-wrapper .puff h3 {
+  font: normal normal 24px/34px Gotham-Bold;
+  letter-spacing: 0px;
+  color: rgba(241, 142, 0, 1);
+  opacity: 1;
+}
+.super-puffer .puff-wrapper .puff .inner-circle h2 {
+  font: normal normal 42px/58px Gotham-Bold;
+  letter-spacing: 0px;
+  color: rgba(241, 142, 0, 1);
+  margin: -14px 0;
+}
+.super-puffer .puff-wrapper .puff p {
+  font: normal normal 18px/26px Gotham-Book;
+  letter-spacing: 0px;
+  color: rgba(241, 142, 0, 1);
+}
+
+.super-puffer .puff-wrapper .puff .inner-circle {
+  width: 177px;
+  height: 177px;
+  border-radius: 177px;
+  border: 3px dashed rgba(241, 142, 0, 1);
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.super-puffer .puff-wrapper .puff .inner-image {
+    width: 177px;
+    height: 177px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .super-puffer .puff-wrapper .puff .inner-image img {
+    max-width: 100%;
+    max-height: 100%;
+ 
+  }
+
+
+/* decorations */
+.super-puffer .light-blue-circle-195px {
+  border-radius: 50%;
+  height: 195px;
+  width: 195px;
+  background-color: rgba(53, 177, 191, 0.1);
+}
+.super-puffer .blue-ring-38px {
+  border: 12px solid #006082;
+  border-radius: 38px;
+  height: 38px;
+  width: 38px;
+}
+.super-puffer .blue-ring-14px {
+  border: 4px solid #006082;
+  border-radius: 14px;
+  height: 14px;
+  width: 14px;
+}
+.super-puffer .light-blue-ring-25px {
+  border: 8px solid #35b1bf;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+}
+.super-puffer .orange-ring-41px {
+  border: 14px solid rgba(241, 142, 0, 1);
+  border-radius: 41px;
+  height: 41px;
+  width: 41px;
+}
+.super-puffer .decoration-left {
+  position: absolute;
+  top: 75px;
+  left: -55px;
+  z-index: 3;
+}
+.super-puffer .decoration-right {
+  position: absolute;
+  bottom: 5px;
+  right: -12px;
+  z-index: 3;
+}
+.super-puffer .decoration-left .decoration-cluster {
+  width: 196px;
+  height: 148px;
+}
+.super-puffer .decoration-right .decoration-cluster {
+  width: 71px;
+  height: 74px;
+  position: relative;
+}
+.super-puffer .blue-ring-38px {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.super-puffer .blue-ring-14px {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+.super-puffer .light-blue-ring-25px {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.super-puffer .block-sub-text{
+  font: normal normal 16px/24px Gotham-Book;
+  text-align: left;
+}
+
+@media (max-width: 1136px) {
+  .super-puffer .container-puffs .puff {
+    flex: 1 0 50%;
+  }
+
+  .super-puffer .decoration-left,
+  .super-puffer .decoration-right {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .super-puffer .container-puffs .puff {
+    flex: 1 0 50%;
+  }
+}
+
+@media (max-width: 779px) {
+  .super-puffer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .super-puffer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .super-puffer .container-puffs,
+  .super-puffer .puff:nth-last-of-type(1),
+  .super-puffer .puff:nth-last-of-type(2) {
+    padding-bottom: 0;
+  }
+  .super-puffer h1 {
+    font: normal normal 24px/32px Gotham-Medium;
+  }
+}
+@media (max-width: 575.98px) {
+  .super-puffer {
+    padding: 64px 24px 77px 24px;
+  }
+  .super-puffer .container-puffs,
+  .super-puffer .container-puffs .puff:last-child {
+    padding-bottom: 0;
+  }
+  .super-puffer .container-puffs .puff {
+    flex: 1 0 100%;
+    padding-bottom: 60px;
+  }
+}

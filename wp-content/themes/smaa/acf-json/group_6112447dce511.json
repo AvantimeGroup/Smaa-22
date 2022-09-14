@@ -1,0 +1,568 @@
+{
+    "key": "group_6112447dce511",
+    "title": "Block: Super CTA",
+    "fields": [
+        {
+            "key": "field_618e82c7b7177",
+            "label": "Bakgrundsfärg",
+            "name": "block_bakgrund",
+            "type": "button_group",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "white": "Vit",
+                "gray": "Grå"
+            },
+            "allow_null": 0,
+            "default_value": "gray",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_618e832fb7178",
+            "label": "Dekoration",
+            "name": "block_decorations",
+            "type": "radio",
+            "instructions": "Välj dekoration, alternativ 1, 2 eller inget.\r\nAlt 1. Orange vänster, två blåa till höger. \r\nAlt 2: Två blåa till höger.\r\nInget: Visar ingen dekoration.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "alt1": "Alt. 1",
+                "alt2": "Alt. 2",
+                "0": "Inget"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": 0,
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_618e83b8b7179",
+            "label": "Position",
+            "name": "block_position",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Vänster",
+                "center": "Center"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "center",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_611244b484129",
+            "label": "Titel",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_611244da8412a",
+            "label": "Brödtext",
+            "name": "bread_text",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_618e8824b162b",
+            "label": "Knappar",
+            "name": "knappar",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 2,
+            "layout": "row",
+            "button_label": "Lägg till en knapp",
+            "sub_fields": [
+                {
+                    "key": "field_614c1ff0c578c",
+                    "label": "Knappfärg",
+                    "name": "link_btn_color",
+                    "type": "radio",
+                    "instructions": "Orange är default",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "orange": "Orange",
+                        "white": "Vit"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "orange",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_614c2046c578d",
+                    "label": "Knapptext",
+                    "name": "link_btn_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_618e84d4b717b",
+                    "label": "Knapptyp",
+                    "name": "knapp_typ",
+                    "type": "radio",
+                    "instructions": "Välj url eller fil",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "url": "URL",
+                        "file": "Fil"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "url",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_614c2090c578e",
+                    "label": "URL",
+                    "name": "link_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_618e84d4b717b",
+                                "operator": "==",
+                                "value": "url"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_611245218412c",
+                    "label": "URL (Fil)",
+                    "name": "file_url",
+                    "type": "file",
+                    "instructions": "Välj PDF från mediabiblioteket",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_618e84d4b717b",
+                                "operator": "==",
+                                "value": "file"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_614c20cac578f",
+                    "label": "Ikon i knapp",
+                    "name": "link_btn_icon",
+                    "type": "font-awesome",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "icon_sets": [
+                        "fas",
+                        "far"
+                    ],
+                    "custom_icon_set": "",
+                    "default_label": "<i class=\"fas\"><\/i> file-download",
+                    "default_value": "",
+                    "save_format": "element",
+                    "allow_null": 0,
+                    "show_preview": 1,
+                    "enqueue_fa": 1,
+                    "fa_live_preview": "",
+                    "choices": []
+                }
+            ]
+        },
+        {
+            "key": "field_61936e11a2719",
+            "label": "2 Kolumn Option",
+            "name": "2_kolumn_option",
+            "type": "button_group",
+            "instructions": "Välj om du vill här 2 kolumner under de vanlig text",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Ja",
+                "no": "Nej"
+            },
+            "allow_null": 0,
+            "default_value": "no",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_61936ebba271a",
+            "label": "Sub Kolumn",
+            "name": "sub_kolumn",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61936e11a2719",
+                        "operator": "==",
+                        "value": "yes"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 2,
+            "layout": "row",
+            "button_label": "Lägg till Sub kolumner",
+            "sub_fields": [
+                {
+                    "key": "field_61936edea271b",
+                    "label": "kolumn rubrik",
+                    "name": "kolumn_rubrik",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61936ef3a271c",
+                    "label": "Kolumn Text",
+                    "name": "kolumn_text",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_61936f5da271d",
+                    "label": "Kolumn Knapp",
+                    "name": "kolumn_knapp",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 1,
+                    "layout": "row",
+                    "button_label": "Lägg till knapp",
+                    "sub_fields": [
+                        {
+                            "key": "field_61937005a2720",
+                            "label": "Länk Typ",
+                            "name": "lank_typ",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "url": "URL",
+                                "file": "Fil",
+                                "e-tjanst": "E-Tjänster"
+                            },
+                            "allow_null": 0,
+                            "default_value": "url",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_61936faba271e",
+                            "label": "Knapp Stil",
+                            "name": "knapp_stil",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "orange": "Orange",
+                                "white": "Vit"
+                            },
+                            "allow_null": 0,
+                            "default_value": "orange",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
+                            "key": "field_61936feda271f",
+                            "label": "Knapp Text",
+                            "name": "knapp_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61937005a2720",
+                                        "operator": "!=",
+                                        "value": "e-tjanst"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_6193705ca2721",
+                            "label": "Knapp URL",
+                            "name": "knapp_url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61937005a2720",
+                                        "operator": "==",
+                                        "value": "url"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_6193707da2722",
+                            "label": "Knapp Fil",
+                            "name": "knapp_fil",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61937005a2720",
+                                        "operator": "==",
+                                        "value": "file"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_61940badcb542",
+                            "label": "Knapp Ikon",
+                            "name": "sub_btn_icon",
+                            "type": "font-awesome",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_61937005a2720",
+                                        "operator": "!=",
+                                        "value": "e-tjanst"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "icon_sets": [
+                                "fas",
+                                "far"
+                            ],
+                            "custom_icon_set": "",
+                            "default_label": "",
+                            "default_value": "",
+                            "save_format": "element",
+                            "allow_null": 0,
+                            "show_preview": 1,
+                            "enqueue_fa": 1,
+                            "fa_live_preview": "",
+                            "choices": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/cta-text-btn"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Fullwidth Call To Action:  Text with button options for  link button or file download button",
+    "show_in_rest": 0,
+    "modified": 1643018589
+}

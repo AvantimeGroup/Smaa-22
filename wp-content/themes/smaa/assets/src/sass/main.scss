@@ -1,0 +1,29 @@
+// Vendors
+@import 'vendors/normalize/sass/_normalize.scss';
+
+// typography
+@import 'typography';
+
+// Defaults
+@import "base";
+
+//Templates
+@import "templates/header";
+@import "templates/nav";
+@import "templates/footer";
+@import "templates/breadcumb";
+@import "templates/modal";
+
+//Modules
+@import "./modules/hero.scss";
+@import "./modules/cards.scss";
+@import "./modules/news-module.scss";
+@import "./modules/testimonial-block.scss";
+@import "./modules/feature-list.scss";
+@import "./modules/author.scss";
+@import "./modules/articles-block.scss";
+@import "./modules/form";
+@import "./modules/social-links";
+@import "./modules/calculator";
+
+@import "./breakpoints.scss";

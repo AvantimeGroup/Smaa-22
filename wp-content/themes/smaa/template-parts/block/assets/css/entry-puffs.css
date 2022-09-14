@@ -1,0 +1,121 @@
+/**
+   Entry Puffs 
+ */
+
+.entry-puffs {
+  padding: 108px 0 48px 0;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #000000cc;
+  text-align: center;
+}
+
+.entry-puffs {
+  padding-left: 16px;
+  padding-right: 14px;
+}
+
+.entry-puffs .container-puffs {
+  padding: 42px 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.entry-puffs .container-puffs .puff {
+  flex-grow: 1;
+  padding-bottom: 60px;
+  width: 277px;
+}
+
+.entry-puffs .circle-127px {
+  position: relative;
+  z-index: 5;
+  margin: auto;
+}
+
+.entry-puffs .circle-127px i {
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  position: absolute;
+  color: #f18e00;
+  font-size: 58px;
+}
+
+.entry-puffs .circle-127px .puffer-svg {
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  position: absolute;
+  color: #f18e00;
+  height: 68px;
+  width: 68px;
+}
+
+.entry-puffs h1 {
+  font: normal normal 32px/42px Gotham-Medium;
+}
+
+.entry-puffs .puff p {
+  margin: 0;
+  padding: 25px 0 29px 0;
+  font: normal normal 18px/26px Gotham-Bold;
+}
+
+.entry-puffs .puff a {
+  color: var(--unnamed-color-f18e00);
+  text-align: left;
+  font: normal normal 16px/22px Gotham-Bold;
+  letter-spacing: 0.24px;
+  color: #f18e00;
+  text-decoration: none;
+}
+
+.entry-puffs .puff a i {
+  padding-left: 8px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (max-width: 990px) {
+  .entry-puffs .container-puffs .puff {
+    flex: 1 0 50%;
+  }
+}
+
+@media (max-width: 779px) {
+  .entry-puffs {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .entry-puffs {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .entry-puffs .container-puffs,
+  .entry-puffs .puff:nth-last-of-type(1),
+  .entry-puffs .puff:nth-last-of-type(2) {
+    padding-bottom: 0;
+  }
+  .entry-puffs h1 {
+    font: normal normal 24px/32px Gotham-Medium;
+  }
+}
+@media (max-width: 575.98px) {
+  .entry-puffs {
+    padding: 64px 24px 77px 24px;
+  }
+  .entry-puffs .container-puffs,
+  .entry-puffs .container-puffs .puff:last-child {
+    padding-bottom: 0;
+  }
+  .entry-puffs .container-puffs .puff {
+    flex: 1 0 100%;
+    padding-bottom: 60px;
+  }
+}

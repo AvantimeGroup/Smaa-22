@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/**
+*  block styles breadcrumbs
+*/
+
+.smaa-block-breadcrumbs {
+  padding: 42px 0 0px 0;
+}
+.smaa-block-breadcrumbs .breadcrumb-row {
+  margin-left: 0;
+  padding-left: 0px;
+}
+#breadcrumbs p {
+  margin: 0;
+}
+#breadcrumbs a {
+  font: normal normal 14px/20px Gotham-Medium;
+  color: #f18e00;
+}
+#breadcrumbs .kill-link {
+  color: #000;
+  cursor: auto;
+  text-decoration: none;
+  pointer-events: none;
+}
+#breadcrumbs .breadcrumb_last {
+  font: normal normal 14px/20px Gotham-Medium;
+  color: #000;
+}
+
+@media (max-width: 779px) {
+  .smaa-block-breadcrumbs {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .smaa-block-breadcrumbs .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .smaa-block-breadcrumbs {
+    padding-bottom: 18px;
+  }
+  .smaa-block-breadcrumbs p #breadcrumbs {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .smaa-block-breadcrumbs .breadcrumb-row {
+    padding-left: 0px;
+  }
+}
