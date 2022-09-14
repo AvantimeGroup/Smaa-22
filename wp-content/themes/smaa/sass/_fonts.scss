@@ -1,0 +1,39 @@
+@mixin font($fontname, $filename, $fontweight, $fontstyle) {
+    @font-face {
+      font-family: $fontname;
+      src: url(#{'fonts/Gothams/'+$filename+'.otf'});
+      src:
+        local('😥'),
+        url(#{'fonts/Gothams/'+$filename+'.otf'}) format("opentype"),
+        url(#{'fonts/Gothams/'+$filename+'.woff'}) format("woff"),
+        url(#{'fonts/Gothams/'+$filename+'.ttf'}) format("truetype"),
+        url(#{'fonts/Gothams/'+$fontname+'.svg#'+$filename}) format("svg");
+        font-weight: $fontweight;
+        font-style: $fontstyle;
+      }
+}
+
+// include book fonts
+@include font('Gotham-Book', 'Gotham-Book/Gotham-Book', 'normal', 'normal');
+@include font('Gotham-BookItalic', 'Gotham-BookItalic/Gotham-BookItalic', 'normal', normal);
+// include black fonts
+@include font('Gotham-Black', 'Gotham-Black/Gotham-Black', 'normal', normal);
+@include font('Gotham-BlackItalic', 'Gotham-BlackItalic/Gotham-BlackItalic', 'normal', normal);
+// include medium fonts
+@include font('Gotham-Medium', 'Gotham-Medium/Gotham-Medium', 'normal', normal);
+@include font('Gotham-MediumItalic', 'Gotham-MediumItalic/Gotham-MediumItalic', 'normal', normal);
+// include bold fonts
+@include font('Gotham-Bold', 'Gotham-Bold/Gotham-Bold', 'normal', normal);
+@include font('Gotham-BoldItalic', 'Gotham-BoldItalic/Gotham-BoldItalic', 'normal', normal);
+// include book fonts
+@include font('Gotham-ExtraLight', 'Gotham-ExtraLight/Gotham-ExtraLight', 'normal', normal);
+@include font('Gotham-ExtraLightItalic', 'Gotham-ExtraLightItalic/Gotham-ExtraLightItalic', 'normal', normal);
+// include light fonts
+@include font('Gotham-Light', 'Gotham-Light/Gotham-Light', 'normal', normal);
+@include font('Gotham-LightItalic', 'Gotham-LightItalic/Gotham-LightItalic', 'normal', normal);
+// include thin fonts
+@include font('Gotham-Thin', 'Gotham-Thin/Gotham-Thin', 'normal', normal);
+@include font('Gotham-ThinItalic', 'Gotham-ThinItalic/Gotham-ThinItalic', 'normal', normal);
+// include ultra fonts
+@include font('Gotham-Ultra', 'Gotham-Ultra/Gotham-Ultra', 'normal', normal);
+@include font('Gotham-UltraItalic', 'Gotham-UltraItalic/Gotham-UltraItalic', 'normal', normal);

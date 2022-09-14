@@ -1,0 +1,58 @@
+/**
+   Ny alert block
+ */
+
+.alert-21 {
+  display: block;
+}
+.alert-21.alert-block .alert {
+  padding: 32px 0 0 0;
+}
+.alert-21.alert-block .text-shell {
+  display: flex;
+  flex-wrap: wrap;
+}
+.alert-21 .svg-icon {
+  margin-right: 6px;
+}
+
+.alert-21 .text-wrapper {
+  max-width: 90%;
+  margin-bottom: 0;
+  font: normal normal 16px/24px Gotham-Book;
+}
+.alert-21 .text-wrapper p {
+  margin-bottom: 0;
+}
+.alert-21 .text-shell button.close {
+  margin-top: -9px;
+}
+@media (max-width: 1200px) {
+  .alert-21 .text-wrapper {
+    max-width: 90%;
+  }
+}
+@media (max-width: 780px) {
+  .alert-21.alert-block .text-shell {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+@media (max-width: 680px) {
+  .alert-21 .text-wrapper {
+    max-width: 86%;
+  }
+  .alert-21.alert-block .text-shell {
+    padding: 0 14px;
+  }
+}
+@media (max-width: 575.98px) {
+  .alert-21 .text-wrapper {
+    max-width: 80%;
+  }
+}
+@media (max-width: 360px) {
+  .alert-21 .text-wrapper {
+    max-width: 76%;
+  }
+}

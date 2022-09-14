@@ -1,0 +1,84 @@
+{
+    "key": "group_61d5ac703a24e",
+    "title": "Block: Chapter Select",
+    "fields": [
+        {
+            "key": "field_61d5aca0edca8",
+            "label": "Välj kapitel-typ",
+            "name": "select_chapter_type",
+            "type": "radio",
+            "instructions": "Välj om de de är första, mellan eller sista kapitlet i en grupp.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "start": "Första kapitlet",
+                "middle": "Mellan kapitlet",
+                "last": "Sista kapitlet"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_61d5ad85edca9",
+            "label": "Ankarlänk för kapitlet",
+            "name": "chapter_anchor_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61d5aca0edca8",
+                        "operator": "==",
+                        "value": "start"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_61d5aca0edca8",
+                        "operator": "==",
+                        "value": "middle"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/chapter-select"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1646816197
+}

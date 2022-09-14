@@ -1,0 +1,255 @@
+/**
+      * Testimonial slider
+  */
+
+.testimonial-slider {
+  background: #fafafa 0% 0% no-repeat padding-box;
+  max-height: 609px;
+}
+
+.testimonial-slider .decoration-left {
+  position: relative;
+  top: 228px;
+  left: -125px;
+}
+
+.testimonial-slider .decoration-right {
+  position: relative;
+  left: 1242px;
+  top: 416px;
+}
+.testimonial-slider .decoration-right-right {
+  position: relative;
+  left: 1262px;
+  top: 338px;
+}
+
+.t-slide .slide-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-height: 300px;
+}
+.testimonial-slider .column-40 {
+  flex: 0 0 40%;
+  text-align: right;
+  padding-right: 16px;
+}
+.testimonial-slider .column-60 {
+  flex: 1;
+  padding-left: 48px;
+  max-width: 552px;
+}
+
+.t-slide {
+  padding: 120px 0 202px 0;
+}
+
+.t-slide .slider-img {
+  display: inline-block;
+  position: relative;
+  width: 287px;
+  height: 287px;
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 5 !important;
+  object-fit: cover;
+  margin: 0 0 0 128px;
+  order: 1;
+}
+.t-slide .slider-img img {
+  width: 100%;
+}
+.t-slide h1 {
+  color: var(--unnamed-color-1c1c1b);
+  text-align: left;
+  font: normal normal 32px/42px Gotham-Medium;
+  letter-spacing: 0px;
+  color: #1c1c1b;
+  opacity: 1;
+  order: 2;
+  max-width: 552px;
+}
+.t-slide .bread-right {
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font: normal normal 18px/24px Gotham-Bold;
+  letter-spacing: 0px;
+  color: #000000;
+  order: 4;
+  max-width: 552px;
+}
+.t-slide blockquote {
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font: italic normal 18px/24px Gotham-Book;
+  letter-spacing: 0px;
+  color: #000000;
+  order: 3;
+  max-width: 552px;
+}
+.t-slide .link-right {
+  order: 5;
+}
+.t-slide p {
+  padding-top: 32px;
+}
+.t-slide .slider-btn {
+  text-align: center;
+  font: normal normal 16px/22px Gotham-Bold;
+  padding: 11px 20px;
+}
+
+/*
+------   Slider controls
+*/
+
+.slider-nav {
+  position: relative;
+  bottom: 64px;
+  width: fit-content;
+  width: -moz-fit-content;
+  min-width: 150px;
+  margin: 0 auto;
+}
+.prev,
+.next {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  color: #f18e00;
+  bottom: 62px;
+  cursor: pointer;
+}
+.prev {
+  left: 0px;
+}
+.next {
+  right: 0px;
+}
+.prev i,
+.next i {
+  font-size: 2em;
+}
+.slick-dots {
+  bottom: 68px;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #f18e00;
+  font-size: 12px;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 8px;
+  line-height: 20px;
+  color: #fcc487;
+}
+
+@media (max-width: 1028px) {
+  .testimonial-slider {
+    max-height: unset;
+  }
+
+  .t-slide {
+    padding: 64px 0 101px 0;
+  }
+
+  .t-slide .slide-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: unset;
+  }
+  .t-slide h1 {
+    order: 1;
+    max-width: 466px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .t-slide .slider-img {
+    order: 2;
+    max-width: 466px;
+    text-align: center;
+    margin: 32px auto;
+  }
+  .t-slide .bread-right {
+    margin: 0 auto;
+    order: 4;
+    max-width: 552px;
+  }
+  .t-slide blockquote {
+    margin: 0 auto;
+    order: 3;
+    max-width: 552px;
+  }
+  .t-slide .link-right {
+    order: 5;
+    margin: 0 auto 84px auto;
+  }
+}
+@media (max-width: 640px) {
+  .t-slide {
+    padding: 64px 0 101px 0;
+  }
+
+  .t-slide h1 {
+    font: normal normal 24px/32px Gotham-Medium;
+    max-width: 466px;
+  }
+
+  .t-slide .bread-right {
+    margin: 32px auto 0 auto;
+    max-width: 466px;
+  }
+  .t-slide blockquote {
+    max-width: 466px;
+  }
+}
+@media (max-width: 540px) {
+  .t-slide {
+    padding: 64px 0 101px 0;
+  }
+  .t-slide h1 {
+    max-width: 366px;
+  }
+  .t-slide .bread-right {
+    margin: 32px auto 0 auto;
+    max-width: 366px;
+  }
+  .t-slide blockquote {
+    max-width: 428px;
+  }
+}
+@media (max-width: 480px) {
+  .t-slide {
+    padding: 64px 0;
+  }
+  .t-slide h1 {
+    max-width: 366px;
+  }
+  .t-slide .bread-right {
+    margin: 32px auto 0 auto;
+    max-width: 328px;
+  }
+  .t-slide blockquote {
+    max-width: 366px;
+    text-align: center;
+  }
+}
+@media (max-width: 416px) {
+  .t-slide {
+    padding: 64px 0 101px 0;
+  }
+  .t-slide h1 {
+    max-width: 366px;
+  }
+  .t-slide .bread-right {
+    max-width: 328px;
+  }
+  .t-slide blockquote {
+    max-width: 348px;
+  }
+}

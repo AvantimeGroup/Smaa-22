@@ -1,0 +1,11 @@
+.smaa-testimonial{
+	@include section($color-ghost-white);
+	text-align: center;
+	blockquote{
+		width: 230px;
+		margin: auto;
+		p{margin-top: 10px; font-style: italic;}
+	}
+	@include slider();
+}
+

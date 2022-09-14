@@ -1,0 +1,9 @@
+.smaa-posts{
+  @include section($color-white);
+	.title{
+		font-size: 2rem;
+		font-family: "Gotham-Book";
+    margin-top: 10px;
+    margin-bottom: 10px;
+	}
+}

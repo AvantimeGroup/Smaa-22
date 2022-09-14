@@ -1,0 +1,39 @@
+ 
+#header-search
+    +fixed-header
+    &>div
+        padding: 1rem 0    
+        @include media-breakpoint-up(md)
+            padding: 5rem 0    
+    .nav-item strong
+        +font-bold
+    .nav-link
+        padding-left: 0
+
+
+// Global search form
+
+.has-search .form-control
+    padding-left: 2.375rem
+    color: $black
+
+.has-search .form-control-feedback
+    position: absolute
+    z-index: 2
+    display: block
+    width: 2.375rem
+    height: 2.375rem
+    line-height: 2.375rem
+    text-align: center
+    pointer-events: none
+    color: $black
+
+body.search-results
+    #main
+        article
+            margin-bottom: 2rem
+            .post-thumbnail img
+                margin-bottom: 1rem
+        .nav-link
+            .active
+                +font-bold

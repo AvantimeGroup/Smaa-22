@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/**
+    * Hero block gray background curved bottom
+*/
+
+.hero-divider-curve {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+.curve-bottom {
+  border-bottom-left-radius: 50% 150px !important;
+  border-bottom-right-radius: 50% 150px !important;
+  border-bottom: 2px solid #e9e9e9;
+  position: relative;
+  overflow: hidden;
+  width: 160%;
+  margin-bottom: -96px;
+  left: -30%;
+  background-color: #fff;
+  background-size: 42% auto;
+  height: 150px;
+  bottom: 96px;
+}
+
+@media (max-width: 766px) {
+  .hero-divider-curve {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    overflow: hidden;
+  }
+  .curve-bottom {
+    border-bottom-left-radius: 0% 150px !important;
+    border-bottom-right-radius: 0% 150px !important;
+    border-bottom: 2px solid #e9e9e9;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    height: 100px;
+  }
+}

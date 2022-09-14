@@ -1,0 +1,38 @@
+
+/* .hero-text{margin-bottom: 50px; width: 40%;}
+.hero-background{
+    .wp-block-coblocks-hero__inner{
+    background-size: 400px 100%!important;
+    background-position: 80% 50%!important;
+   }
+} */
+.smaa-hero{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    @include section($color-white);
+    h1{
+        font-family: "Ghotam-Book",Arial, Helvetica, sans-serif;
+        font-size: 3.25rem;
+        color:$color-white;
+        font-weight: normal;
+    }
+    p{
+        width: 60%;
+        margin-bottom: 50px; 
+        color:$color-white; 
+        font-family: "Ghotam-Medium",Arial, Helvetica, sans-serif;
+        font-weight: 500;
+    }
+    button{
+        margin-right: 20px;
+    }
+    @include media-breakpoint-down(sm){    
+        p{
+            width: 100%;
+        }
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 35px 0px;
+    }
+}

@@ -1,0 +1,30 @@
+.social-links{
+        list-style-type: none;
+        margin: 0px 0px 30px 0px;
+        padding: 0;
+        overflow: hidden;
+        li {
+            display: inline;
+            margin-left: 5px;
+            a {
+                text-align: center;
+                padding: 16px;
+                @include links($color-primary, rgba(241, 142, 0, 0.4));
+                i{
+                    background-color: $color-cherokee;
+                    width: 40px;
+                    height: 40px;
+                    padding-top: 1%;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    @include media-breakpoint-down(sm){
+                        padding-top: 3%;
+                    }
+                }
+            }
+    }
+    
+    
+      
+
+}

@@ -1,0 +1,17 @@
+/**
+    * start page adjustments
+*/
+.wp-block-coblocks-hero h1.start-hero  {
+  font: normal normal 40px/48px Gotham-Medium;
+}
+
+.benefits-block .container h1 {
+  font: normal normal 32px/42px Gotham-Medium;
+}
+
+@media (max-width: 768px) {
+
+     .benefits-block .container {
+        padding: 0 24px;
+      }
+}

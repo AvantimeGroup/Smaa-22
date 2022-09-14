@@ -1,0 +1,178 @@
+/**
+   CTA Mina E-Tjänster
+ */
+
+.timeline-orange {
+  opacity: 1;
+  padding: 52px 24px 42px 24px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #000000cc;
+}
+.timeline-orange .row-timeline {
+  display: block;
+}
+.timeline-orange.bg-white {
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.timeline-orange.bg-gray {
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.timeline .time-item {
+  width: 437px;
+  height: 194px;
+  background: rgba(254, 246, 235, 1) 0% 0% no-repeat padding-box;
+  border-radius: 0px 19px 0px 0px;
+  opacity: 1;
+}
+
+.timeline-orange h1 {
+  font: normal normal 32px/44px Gotham-Medium;
+}
+.timeline-orange p {
+  margin: auto;
+  font: normal normal 18px/26px Gotham-Book;
+  text-align: left;
+}
+
+.timeline-orange h2 {
+  text-align: left;
+  font: normal normal 24px/34px Gotham-Medium;
+  letter-spacing: 0px;
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.timeline ul {
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  background: rgba(241, 142, 0, 1) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.timeline ul li:first-child::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(241, 142, 0, 1);
+}
+.timeline ul li:last-child::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgba(241, 142, 0, 1);
+}
+
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: inherit;
+  z-index: 1;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  padding: 32px 43px 32px 35px;
+  width: 437px;
+  /* height: 194px; */
+  background: rgba(254, 246, 235, 1) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 25px;
+  border-radius: 0px 19px 0px 0px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #f45b69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -464px;
+  border-radius: 19px 0px 0px 0px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #f45b69;
+}
+
+@media screen and (max-width: 950px) {
+  .timeline ul li div {
+    width: 320px;
+    padding: 32px 35px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -339px;
+    /*250+45-6*/
+  }
+}
+@media screen and (max-width: 770px) {
+  .timeline ul li div {
+    width: 300px;
+    padding: 28px 32px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -339px;
+    /*250+45-6*/
+  }
+  .timeline-orange p {
+    font: normal normal 16px/24px Gotham-Book;
+  }
+
+  .timeline-orange h2 {
+    font: normal normal 18px/24px Gotham-Medium;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  .timeline ul li {
+    margin-left: 10px;
+    padding: 10px 0;
+  }
+  .timeline ul li:first-child {
+    padding: 0px 0 10px 0;
+  }
+  .timeline ul li:last-child {
+    padding: 10px 0 0px 0;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 25px;
+    border-radius: 0px 19px 0px 0px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #f45b69 transparent transparent;
+  }
+}
+

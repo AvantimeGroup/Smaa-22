@@ -1,0 +1,71 @@
+/*!
+	Theme Name: SMÅA
+	Theme URI: http://underscores.me/
+	Author: Avantime
+	Author URI: https://www.avantime.se
+	Description: Theme for SMÅA
+	Version: 1.0.0
+	License: GNU General Public License v2 or later
+	License URI: LICENSE
+	Text Domain: smaa
+	Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+	This theme, like WordPress, is licensed under the GPL.
+	Use it to make something cool, have fun, and share what you've learned.
+
+	SMÅA is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+	Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+	Normalizing styles have been helped along thanks to the fine work of
+	Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+	*/
+
+
+
+// Colors
+
+$smaa-orange: #F18E00
+$smaa-orange-light: #F9A141
+$divider-line-color: #999999
+$block-shade: #f5f5f6
+$smaa-btn-hover: $smaa-orange-light
+$btn-border-radius: 1.25rem
+
+// Override and init bootstrap
+$theme-colors: ("primary": $smaa-orange)
+$primary: $smaa-orange
+$font-family-regular: 'Gotham-Book', sans-serif
+$font-family-bold: 'Gotham-Medium', sans-serif
+$font-size-base: 1rem
+$line-height-base: 1.5
+$input-border-radius: 1.25rem
+
+@mixin font-regular()
+  font-family: $font-family-regular
+
+@mixin font-bold()
+  font-family: $font-family-bold
+  font-weight: 400
+
+   
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/@fortawesome/fontawesome-free/css/all.css'
+
+// Import modules
+@import 'fonts'
+@import 'common'
+@import 'header'
+@import 'nav'
+@import 'blocks/blocks'
+@import 'gutenberg'
+@import 'article'
+@import 'page'
+@import 'search'
+@import 'widgets'
+@import 'post'
+@import 'contact-form-7'
+@import 'login'
+@import '404'
+@import 'icons'
+@import 'translate'

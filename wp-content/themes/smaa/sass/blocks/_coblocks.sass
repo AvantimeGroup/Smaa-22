@@ -1,0 +1,29 @@
+/*
+    Overrides for Coblocks
+    */
+.wp-block-coblocks-accordion-item__title:focus 
+    outline: none
+
+.wp-block-coblocks-accordion-item__title
+    background: $block-shade
+
+@include media-breakpoint-up(lg)
+    .has-columns.has-4-columns>*:not(.block-editor-inner-blocks)
+        flex-basis: 24%
+        margin: 5px
+
+    .wp-block-coblocks-posts__content
+        padding-right: 9px
+    
+    .wp-block-coblocks-posts__image
+        .bg-cover
+            border-radius: 0.5rem
+
+.wp-block-coblocks-posts__content > a
+    margin: 10px 0px
+    font-weight: bold
+
+.wp-block-coblocks-hero__inner
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+
+           
