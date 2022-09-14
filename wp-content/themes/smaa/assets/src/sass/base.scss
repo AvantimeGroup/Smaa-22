@@ -1,0 +1,65 @@
+// variables
+@import 'variables';
+// mixins
+@import 'mixins';
+:root {
+    font-size: 16px;
+}
+html, body{
+    font-family: "Ghotam",Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    color: $color-maire;
+    opacity: 1;
+    overflow-x: hidden;
+}
+*a{
+    color: $color-primary;
+    &:hover,&:visited{
+        color: $color-primary;
+        text-decoration: none;
+    }
+}
+
+body.admin-bar div#smaa_nav_modal{
+    top:96px!important;
+}
+    
+
+// quotes 
+/* q{ quotes: '“' '”'} */
+q { quotes: '\201c' '\201d'; }
+q:before { content: open-quote; }
+q:after  { content: close-quote; }
+
+.fa{cursor: pointer;}
+.show{display:block;}
+.thumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+//buttons
+.smaa-btn-primary{
+    @include buttons($color-primary,$color-white,$color-sunshade,$color-white);
+    @include buttonToAction;
+}
+.smaa-btn-secondary{
+    @include buttons($color-white,$color-primary,$color-sunshade,$color-white);
+    @include buttonToAction;
+}
+
+//Links
+.smaa-link-primary{
+    font-family: "Gotham-Medium", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    @include links($color-primary, $color-link-primary-hover);
+}
+.smaa-link-secondary{
+    font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    @include links($color-maire, $color-primary);
+}
+.large-hide{display: none;}
+@include media-breakpoint-down(sm){
+  .small-hide{display: none;}
+  .large-hide{display: block;}
+}

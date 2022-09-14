@@ -1,0 +1,215 @@
+/**
+   CTA Mina E-Tjänster
+ */
+
+.cta-etjanster-text {
+  opacity: 1;
+  padding: 52px 24px 42px 24px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #000000cc;
+}
+.cta-etjanster-text .row-cta-etjanster {
+  display: block;
+}
+.cta-etjanster-text.bg-white,
+.cta-etjanster-text .block-button a .bg-white {
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.cta-etjanster-text.bg-gray,
+.cta-etjanster-text .block-button a .bg-gray {
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.cta-etjanster-text .cta-box {
+  order: 2;
+  max-width: 760px;
+  /* padding: 0 12px; */
+  padding: 0;
+}
+.cta-etjanster-text .cta-box.block-center {
+  margin: 0 auto;
+  text-align: center;
+}
+.cta-etjanster-text .cta-box.block-left {
+  margin: 0;
+  text-align: left;
+}
+.cta-etjanster-text h1 {
+  font: normal normal 32px/44px Gotham-Medium;
+}
+.cta-etjanster-text p {
+  margin: auto;
+  padding: 8px 0 24px 0;
+  max-width: 760px;
+  font: normal normal 18px/28px Gotham-Book;
+}
+
+.cta-etjanster-text .block-button {
+  padding: 16px 0 32px 0;
+}
+.cta-etjanster-text .block-button a {
+  text-align: center;
+  font: normal normal 14px/20px Gotham-Medium;
+  color: #1d1d1b;
+  text-decoration: none;
+  cursor: pointer;
+}
+.cta-etjanster-text .block-button .white-btn {
+  border: 2px solid #1b1b1a;
+  border-radius: 22px;
+  padding: 9px 20px 8px 20px;
+}
+
+.cta-etjanster-text .block-button i {
+  padding-right: 8px;
+  font-size: 17px;
+}
+
+/* decorations */
+
+.cta-etjanster-text .orange-ring-50px {
+  border: 14px solid #f18e00;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+.cta-etjanster-text .blue-ring-50px {
+  border: 14px solid #006082;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+}
+.cta-etjanster-text .blue-ring-38px {
+  border: 10px solid #006082;
+  border-radius: 38px;
+  height: 38px;
+  width: 38px;
+}
+.cta-etjanster-text .blue-ring-25px {
+  border: 8px solid #006082;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+}
+.cta-etjanster-text .light-blue-ring-25px {
+  border: 8px solid #35b1bf;
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+}
+
+.cta-etjanster-text .decoration-left-1 {
+  order: 1;
+  display: block;
+  position: relative;
+  z-index: 3;
+  right: 150px;
+  top: 64px;
+}
+.cta-etjanster-text .decoration-right-1 {
+  /* order: 3; */
+  display: block;
+  position: relative;
+  z-index: 3;
+  left: 100%;
+  bottom: -10%;
+}
+.cta-etjanster-text .decoration-right-2 {
+  /* order: 3; */
+  display: block;
+  position: relative;
+  z-index: 3;
+  left: 95%;
+  bottom: 100%;
+}
+
+.cta-etjanster-text .decoration-left-1 .decoration-cluster-1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+}
+.cta-etjanster-text .decoration-right-1 .decoration-cluster-1 {
+  width: 196px;
+  height: 98px;
+  position: absolute;
+}
+.cta-etjanster-text .decoration-right-1 .decoration-cluster-1 .light-blue-ring-25px {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.cta-etjanster-text .decoration-right-1 .decoration-cluster-1 .blue-ring-38px {
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+/* .cta-etjanster-text .decoration-right-2 {
+  z-index: 3;
+  left: -112px;
+  top: 0;
+} */
+.cta-etjanster-text .decoration-right-2 .decoration-cluster-2 {
+  width: 86px;
+  height: 94px;
+  position: absolute;
+}
+.cta-etjanster-text .decoration-right-2 .decoration-cluster-2 .blue-ring-25px {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.cta-etjanster-text .decoration-right-2 .decoration-cluster-2 .blue-ring-50px {
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+/* decoration cluster positions */
+
+.cta-etjanster-text .decoration-cluster .orange-ring-50px,
+.cta-etjanster-text .decoration-cluster .blue-ring-38px,
+.cta-etjanster-text .decoration-cluster .light-blue-ring-25px {
+  position: absolute;
+}
+.cta-etjanster-text .decoration-cluster .orange-ring-50px {
+  top: 0;
+  left: 0;
+}
+.cta-etjanster-text .decoration-cluster .blue-ring-38px {
+  top: 0;
+  right: 0;
+}
+.cta-etjanster-text .decoration-cluster .light-blue-ring-25px {
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  .cta-etjanster-text .decoration-left-1,
+  .cta-etjanster-text .decoration-left-2,
+  .cta-etjanster-text .decoration-right-1,
+  .cta-etjanster-text .decoration-right-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cta-etjanster-text {
+    padding: 32px 24px;
+
+    text-align: center;
+  }
+  .cta-etjanster-text .block-button {
+    padding: 32px 0 32px 0;
+  }
+  .cta-etjanster-text h1 {
+    font: normal normal 24px/32px Gotham-Medium;
+    padding: 0 8px;
+  }
+  .cta-etjanster-text p {
+    font: normal normal 16px/24px Gotham-Book;
+    padding: 8px;
+  }
+}

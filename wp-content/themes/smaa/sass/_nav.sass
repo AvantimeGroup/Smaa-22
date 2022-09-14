@@ -1,0 +1,137 @@
+.navbar
+    padding-top: 0
+    padding-bottom: 0
+    button.hamburger
+        border-radius: 0 !important
+
+    @media (max-width: 320px)
+        .nav-label
+            font-size: 0.7rem
+    a, button.hamburger
+        i.smaa-icon
+            width: 11px
+            height: 12px
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &:hover
+            color: $smaa-orange
+            .smaa-icon
+                background: $smaa-orange
+                
+                
+
+.block-nav
+    ul
+        @include media-breakpoint-up(md)
+            margin-top: 3rem
+        @include make-container()
+        @include make-container-max-widths()
+        .menu-item
+            @extend .flex-md-fill     
+            .nav-link.dropdown-toggle
+                +font-bold
+                font-size: 1rem
+                &:hover:hover, &:active, &:focus
+                    color: $black !important
+            .dropdown-toggle::after
+                @include media-breakpoint-up(md)
+                    display: none                     
+                @include media-breakpoint-down(sm)
+                    margin-top: 0.3rem
+                    float: right
+                    
+            @include media-breakpoint-down(sm)
+                padding: 0.75rem 0
+                margin: 0 0.5rem
+                border-bottom: 1px solid $divider-line-color
+        .dropdown-menu
+            @include media-breakpoint-up(sm)
+                display: block
+            border: none
+            padding: 0
+            .dropdown-item
+                padding: 0.5rem 0
+            a
+                font-size: 0.875rem
+                
+        @include media-breakpoint-down(sm)
+            padding: 0 !important
+    a
+        color: $black
+        &:focus
+            outline: none
+
+    .dropdown-item, .nav-link
+        &:active, &:focus, &:hover
+            background: none
+            box-shadow: none
+            &:active, &:focus, &:hover 
+                color: $smaa-orange
+
+    .nav-link
+        color: #000
+        font-family: $font-family-bold
+
+    @include media-breakpoint-up(sm)    
+        .expanded-nav .navbar-nav
+            margin-top: 0
+            padding: 0
+
+    
+.sidenav
+    a.title
+        @include media-breakpoint-up(md)
+            margin-left: 1rem
+    ul.sidenav-menu
+        padding: 0
+        //margin-top: 0.5rem
+        a
+            display: block  
+            color: $black
+            &:hover
+                color: $smaa-orange
+                text-decoration: none
+        li:first-child a
+            border-top: none
+        &>li
+            &>a
+                border-bottom: 1px solid #DCDCDC
+                border-top: 1px solid #DCDCDC
+                margin-bottom: -1px // Hack for hiding overlapping lines
+                padding: 0.5rem 0 0.5rem 1rem                
+            &:last-child
+                border-bottom: none
+            &.current_page_ancestor > a
+                +font-bold
+        li
+            list-style: none
+            padding: 0
+            margin: 0
+            &.current_page_item
+                > a
+                   color: $smaa-orange
+                   +font-bold
+        ul
+            padding: 0
+        ul.children
+            margin: 0.5rem 0 0.5rem 1rem
+            //margin-left: 1rem
+            li
+            a
+                padding: 0.25rem 0 0.25rem 1rem 
+        .page_item
+            .children
+                display: none
+            &.current_page_ancestor > ul.children //, &.current_page_item
+                    display: block                    
+            &.current_page_item
+                .children
+                    display: block
+            &.current_page_item .children .children
+                display: none
+
+            
+                    
+
+       
+
+            

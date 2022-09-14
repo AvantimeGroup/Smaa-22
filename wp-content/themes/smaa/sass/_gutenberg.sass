@@ -1,0 +1,62 @@
+/*
+    Styles from gutenberg editor
+ */
+
+
+.has-block-shade-background-color 
+    background-color: $block-shade
+    &.white
+        background-color: #FFFFFF
+
+
+.has-block-shade a
+    color: $block-shade
+
+.wp-block-button
+    border-radius: $btn-border-radius
+    padding: 0
+    a
+        padding: 0.5rem 3rem
+        font-size: 0.875rem
+        //@extend .btn;
+    @include media-breakpoint-down(sm)	
+        width: 100%
+        margin-bottom: 0.5rem !important
+        .wp-block-button__link
+            width: 100%
+
+    .wp-block-button__link
+        text-decoration: none !important; 
+        &.has-background
+            &.has-white-background-color 
+                background-color: $white
+                border: 2px solid $white
+                &:hover
+                    background-color: rgba($white, 0.7)
+                    border-color: $white
+            &.has-smaa-orange-background-color 
+                background-color: $smaa-orange
+                border: 2px solid $smaa-orange
+                &:hover
+                    background-color: #F9A141
+                    border-color: #F9A141
+
+        &.has-text-color 
+            &.has-smaa-orange-color
+                color: $smaa-orange
+
+
+.is-style-outline 
+    a.has-white-color
+        border-color: $white
+        color: $white
+        &:hover
+            background-color: rgba(255, 255, 255, 0.3)
+
+.wp-block-group
+    &.alignwide
+        .wp-block-group__inner-container
+            @extend .container;          
+    &.alignfull
+        .wp-block-group__inner-container
+            @extend .container-fluid;

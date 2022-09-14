@@ -1,0 +1,53 @@
+/**
+   Block title h2 H2
+ */
+
+.blockblock-title {
+  padding: 64px 0 0 0;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #000000cc;
+  margin-left: 0;
+}
+.blockblock-title.bg-white {
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+.blockblock-title.bg-gray {
+  background: #fafafa 0% 0% no-repeat padding-box;
+}
+
+.blockblock-title .left {
+  text-align: left;
+}
+.blockblock-title .center {
+  text-align: center;
+}
+.blockblock-title .right {
+  text-align: right;
+}
+
+.blockblock-title h1 {
+  font: normal normal 32px/44px Gotham-Medium;
+  margin-bottom: 0;
+}
+
+@media (max-width: 780px) {
+  .blockblock-title {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+@media (max-width: 575.98px) {
+  .blockblock-title {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .blockblock-title {
+    padding: 8px 24px;
+  }
+  .blockblock-title h2 {
+    font: normal normal 24px/32px Gotham-Medium;
+  }
+}

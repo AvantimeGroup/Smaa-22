@@ -1,0 +1,41 @@
+/**
+   Bold text page ingress H2
+ */
+
+.fw-page-ingress-h2 {
+  padding: 16px 24px 0 24px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+  letter-spacing: 0px;
+  color: #000000cc;
+}
+
+.fw-page-ingress-h2 .row-bold {
+  margin-left: 0;
+  /* padding-left: 12px; */
+}
+.fw-page-ingress-h2 .h2-ingress {
+  max-width: 760px;
+  padding: 16px 0;
+}
+
+.fw-page-ingress-h2 .h2-ingress h2 {
+  text-align: left;
+  font: normal normal 22px/30px Gotham-Medium;
+}
+
+
+
+@media (max-width: 575.98px) {
+  .fw-page-ingress-h2 .row-bold {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .fw-page-ingress-h2 {
+    padding: 8px 0 0 0;
+  }
+  .fw-page-ingress-h2 .h2-ingress h2 {
+    font: normal normal 18px/24px Gotham-Medium;
+  }
+}

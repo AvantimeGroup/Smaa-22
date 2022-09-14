@@ -1,0 +1,25 @@
+#header-translate
+    @include media-breakpoint-down(sm)
+        padding-left:0!important
+        padding-right:0!important
+    ul
+        padding: 0
+        column-count: 2
+        @include media-breakpoint-up(md)
+            column-count: 5
+
+        li
+            list-style: none
+            display: inline-block
+            width: 50%
+            @include media-breakpoint-up(md)
+                width: 20%
+        a
+            padding-left: 0
+            display: block
+            font-size: 0.875rem
+            color: $black
+            &:hover
+                color: $smaa-orange
+            @include media-breakpoint-up(md)
+                white-space: nowrap

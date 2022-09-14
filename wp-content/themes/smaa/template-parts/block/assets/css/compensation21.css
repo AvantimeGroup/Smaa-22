@@ -1,0 +1,168 @@
+/**
+*  compensation calculator
+*/
+.compensation-calculator-block {
+  background: #fafafa 0% 0% no-repeat padding-box;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.compensation-calculator-block .container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.compensation-calculator-block .decoration-left {
+  position: relative;
+  top: 300px;
+  left: -50px;
+}
+.compensation-calculator-block .decoration-right {
+  position: absolute;
+  right: -89px;
+  top: 116px;
+}
+.compensation-calculator-block .decoration-right-right {
+  position: absolute;
+  right: -145px;
+  top: 218px;
+}
+
+.compensation-calculator-block .calc-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.compensation-calculator-block .calc-wrapper .calc {
+  max-width: 560px;
+}
+
+.compensation-calculator-block h1 {
+  font: normal normal 32px/42px Gotham-Medium;
+  letter-spacing: 0px;
+  color: #000000cc;
+  padding-bottom: 6px;
+}
+.compensation-calculator-block i {
+  font-size: 42px;
+  line-height: 40px;
+  color: #f18e00;
+  padding: 2px 24px;
+}
+.compensation-calculator-block form {
+  padding: 1.5rem 5rem 0.85rem 5rem;
+}
+.compensation-calculator-block .form-control-block {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 1rem + 2px);
+  padding: 1.35rem;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 1.55rem;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  border: 2px solid var(--unnamed-color-f18e00);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #f18e00;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font: normal normal normal 16px/22px Gotham-Book;
+  letter-spacing: 0px;
+  color: #323232;
+  opacity: 1;
+  outline: none;
+}
+.compensation-calculator-block .form-control-block:focus {
+  border: 1px solid #f18e00;
+}
+.compensation-calculator-block .disclaimer {
+  font: normal normal normal 14px/20px Gotham-Book;
+  letter-spacing: 0px;
+  color: #000000cc;
+  opacity: 1;
+  padding-bottom: 36px;
+}
+
+.compensation-calculator-block.disclaimer hr {
+  color: #d3d3d3;
+  height: 1px;
+}
+.compensation-calculator-block .wp-block-button a {
+  padding: 9px 20px 8px 20px;
+  font: normal normal 14px/20px Gotham-Medium;
+  letter-spacing: 0.27px;
+}
+
+.compensation-calculator-block .wp-block-button__link{
+	color: #000;
+}
+.compensation-calculator-block .wp-block-button__link:hover{
+	color: #fff;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media (max-width: 1420px) {
+  .compensation-calculator-block .decoration-left,
+  .compensation-calculator-block .decoration-right,
+  .compensation-calculator-block .decoration-right-right {
+    display: none;
+  }
+}
+
+@media (max-width: 779px) {
+  .compensation-calculator-block h1 {
+    font: normal normal 24px/32px Gotham-Medium;
+  }
+  .compensation-calculator-block {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .compensation-calculator-block .decoration-left,
+  .compensation-calculator-block .decoration-right,
+  .compensation-calculator-block .decoration-right-right {
+    display: none;
+  }
+  .compensation-calculator-block .container {
+    padding: 0;
+  }
+  .compensation-calculator-block h1 {
+    font: normal normal 24px/32px Gotham-Medium;
+  }
+	/*
+  .compensation-calculator-block p {
+    font: normal normal 16px/26px Gotham-Medium;
+  }
+	*/
+  .compensation-calculator-block p strong {
+    font: normal normal 18px/26px Gotham-Medium;
+  }
+  .compensation-calculator-block i {
+    padding: 2px 24px 2px 0;
+  }
+  .compensation-calculator-block form {
+    padding: 2rem 0rem;
+  }
+  .compensation-calculator-block .wp-block-button {
+    max-width: 258px;
+  }
+  .compensation-calculator-block .wp-block-button a {
+    padding: 10px 16px;
+  }
+  .compensation-calculator-block .col,
+  .compensation-calculator-block .col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

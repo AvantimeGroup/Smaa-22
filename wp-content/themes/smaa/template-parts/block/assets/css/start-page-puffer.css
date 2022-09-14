@@ -1,0 +1,15 @@
+/**
+    * start page adjustments
+*/
+@media (max-width: 1079px) {
+  .entry-points-block .card-deck .card {
+    min-width: 46%;
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .entry-points-block .container {
+    padding: 0 24px;
+  }
+}

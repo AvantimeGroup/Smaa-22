@@ -1,0 +1,44 @@
+{
+    "key": "group_62b0c89109a2d",
+    "title": "Template option: Page Language",
+    "fields": [
+        {
+            "key": "field_62b0c8911cd00",
+            "label": "Page Language Tag",
+            "name": "page_lang",
+            "type": "text",
+            "instructions": "Skriv den språk tag för sida.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "landing-multi-lang.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1655754509
+}

@@ -1,0 +1,31 @@
+.breadcrumb {
+  background-color: transparent;
+  padding: 50px 0 10px;
+  margin-top:5rem;
+
+  .breadcrumb-item {
+    font-size: 0.74rem;
+
+    &+.breadcrumb-item {
+      padding-left: .2rem;
+    }
+
+    &:before {
+      padding-right: 0;
+      color: #B5B5B5;
+    }
+
+    a {
+      color: #B5B5B5;
+      &:hover{
+        color: #06b0e9;
+      }
+    }
+  }
+}
+.single-breadcrumbs{
+  .breadcrumb {
+    margin: 1.75rem 0 0;
+    padding: 0;
+  }
+}

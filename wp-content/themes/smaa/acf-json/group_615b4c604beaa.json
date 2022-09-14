@@ -1,0 +1,581 @@
+{
+    "key": "group_615b4c604beaa",
+    "title": "Block: Text Kurv Bild 50\/50",
+    "fields": [
+        {
+            "key": "field_62ab18b879e63",
+            "label": "LTL eller RTL",
+            "name": "ltl_rtl",
+            "type": "radio",
+            "instructions": "Default LTL för Latin språk\r\nFör arabiska och liknad höger styrde språk välja RTL",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "LTL": "LTL",
+                "RTL": "RTL"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "LTL",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6160071beeb21",
+            "label": "Gruppplacering",
+            "name": "block_grupp",
+            "type": "radio",
+            "instructions": "Detta blocket kan visas som ett separat block eller tillsammans med flera likadana block.\r\nOm det är flera block på en och samma sida, som visas i följd, så är det bra att välja ett alternativ ovan för att få bästa möjliga layout för blocket\/blocken på siten.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "alone": "Ett block",
+                "first": "Första blocket i grupp",
+                "middle": "Mellersta blocket i grupp",
+                "last": "Sista blocket i grupp"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "alone",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_615b4c6066622",
+            "label": "Dekoration",
+            "name": "section_decoration",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "yes": "Ja",
+                "no": "Nej"
+            },
+            "allow_null": 0,
+            "default_value": "yes",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_615b4c6066593",
+            "label": "Position av bild",
+            "name": "image_position",
+            "type": "button_group",
+            "instructions": "Default är vänster",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Vänster",
+                "right": "Höger"
+            },
+            "allow_null": 0,
+            "default_value": "left",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_61960bbe6bfa3",
+            "label": "Lägg till bild eller logo",
+            "name": "bild_or_logo",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "image": "Bild",
+                "logo": "Logo"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_615b4c60665dc",
+            "label": "Bild",
+            "name": "section_image",
+            "type": "image",
+            "instructions": "Obs! Bilden måste vara fyrkantig och minst 520X520 pixlar.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61960bbe6bfa3",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_61960c306bfa4",
+            "label": "Logo",
+            "name": "logo",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61960bbe6bfa3",
+                        "operator": "==",
+                        "value": "logo"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_615c2018115e3",
+            "label": "Position av text",
+            "name": "text_align",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Vänster",
+                "center": "Center",
+                "right": "Höger"
+            },
+            "allow_null": 0,
+            "default_value": "center",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_615b4c6066667",
+            "label": "Rubrik",
+            "name": "title_1",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_615b4c60666ac",
+            "label": "Text",
+            "name": "text_1",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_61e14d96a0f59",
+            "label": "Länkar",
+            "name": "links",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Lägg till Länk",
+            "sub_fields": [
+                {
+                    "key": "field_61e14daea0f5a",
+                    "label": "Text",
+                    "name": "link_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61e14dbca0f5b",
+                    "label": "URL",
+                    "name": "link_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_61e14dcea0f5c",
+                    "label": "Ikon",
+                    "name": "link_icon",
+                    "type": "font-awesome",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "icon_sets": [
+                        "fas",
+                        "far"
+                    ],
+                    "custom_icon_set": "",
+                    "default_label": "&lt;i class=\"fas\"&gt;&amp;#xf105;&lt;\/i&gt; angle-right",
+                    "default_value": "fas fa-angle-right",
+                    "save_format": "element",
+                    "allow_null": 0,
+                    "show_preview": 1,
+                    "enqueue_fa": 1,
+                    "fa_live_preview": "",
+                    "choices": []
+                }
+            ]
+        },
+        {
+            "key": "field_615c17423ce18",
+            "label": "Knappar",
+            "name": "btn_group",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 4,
+            "layout": "block",
+            "button_label": "Lägg till en knapp",
+            "sub_fields": [
+                {
+                    "key": "field_615c17903ce19",
+                    "label": "Typ av knapp",
+                    "name": "btn_stil",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "orange": "Orange",
+                        "white": "Vit",
+                        "etjanst": "E-Tjänster"
+                    },
+                    "allow_null": 0,
+                    "default_value": "orange",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_615c184a3ce1a",
+                    "label": "Knapptext",
+                    "name": "btn_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_615c17903ce19",
+                                "operator": "!=",
+                                "value": "etjanst"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_615e8dd2625bf",
+                    "label": "Typ av länk",
+                    "name": "link_type",
+                    "type": "button_group",
+                    "instructions": "Välj om länken är för webb-sida (URL) eller en fil som ska laddas ner.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_615c17903ce19",
+                                "operator": "!=",
+                                "value": "etjanst"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "url": "URL",
+                        "file": "Fil"
+                    },
+                    "allow_null": 0,
+                    "default_value": "url",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_615c18aaa8a50",
+                    "label": "URL",
+                    "name": "btn_url",
+                    "type": "url",
+                    "instructions": "Knappens URL. Lämna tom om du väljer E-Tjänster.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_615c17903ce19",
+                                "operator": "!=",
+                                "value": "etjanst"
+                            },
+                            {
+                                "field": "field_615e8dd2625bf",
+                                "operator": "==",
+                                "value": "url"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_615c18dfa8a51",
+                    "label": "Fil",
+                    "name": "btn_file",
+                    "type": "file",
+                    "instructions": "Om knappen  är för en fil, välj fil här\r\n\r\nOm knappen är en URL eller E-Tjänster, lämna den tom.",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_615c17903ce19",
+                                "operator": "!=",
+                                "value": "etjanst"
+                            },
+                            {
+                                "field": "field_615e8dd2625bf",
+                                "operator": "==",
+                                "value": "file"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_615c1c001f077",
+                    "label": "Knappikon",
+                    "name": "show_btn_ikon",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_615c17903ce19",
+                                "operator": "!=",
+                                "value": "etjanst"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "yes": "Ja",
+                        "no": "Nej"
+                    },
+                    "allow_null": 0,
+                    "default_value": "no",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_615c1942a8a52",
+                    "label": "Knappikon",
+                    "name": "btn_icon",
+                    "type": "font-awesome",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_615c17903ce19",
+                                "operator": "!=",
+                                "value": "etjanst"
+                            },
+                            {
+                                "field": "field_615c1c001f077",
+                                "operator": "==",
+                                "value": "yes"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "icon_sets": [
+                        "fas",
+                        "far"
+                    ],
+                    "custom_icon_set": "",
+                    "default_label": "<i class=\"fas\"><\/i> download",
+                    "default_value": "",
+                    "save_format": "element",
+                    "allow_null": 0,
+                    "show_preview": 1,
+                    "enqueue_fa": 1,
+                    "fa_live_preview": "",
+                    "choices": []
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/text-curv-img-50-50"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Image left or right with text 50 50 layout",
+    "show_in_rest": 0,
+    "modified": 1662733884
+}

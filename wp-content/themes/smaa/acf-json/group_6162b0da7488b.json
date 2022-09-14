@@ -1,0 +1,150 @@
+{
+    "key": "group_6162b0da7488b",
+    "title": "Block: Table",
+    "fields": [
+        {
+            "key": "field_6162b116ded1e",
+            "label": "Rubrik",
+            "name": "table_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_622b42c823e79",
+            "label": "Rubrik placering",
+            "name": "title_pos",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "1": "Vänster",
+                "2": "Center",
+                "3": "Höger"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "left",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_616fc8895a008",
+            "label": "Tabell",
+            "name": "tabell",
+            "type": "table",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "use_header": 0,
+            "use_caption": 2
+        },
+        {
+            "key": "field_616fcbf1230fc",
+            "label": "Tabellnotering",
+            "name": "table_notes",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Lägg till notering",
+            "sub_fields": [
+                {
+                    "key": "field_616fcc25230fd",
+                    "label": "Notering",
+                    "name": "table_note",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_622b432723e7a",
+            "label": "Tabellnotering placering",
+            "name": "notes_pos",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Vänster",
+                "center": "Center",
+                "right": "höger"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "left",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/fixed-table"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1647006216
+}

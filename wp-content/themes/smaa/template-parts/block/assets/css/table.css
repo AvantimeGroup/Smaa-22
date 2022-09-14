@@ -1,0 +1,125 @@
+/**
+    *  fixed-table
+*/
+
+.fixed-table {
+  padding: 32px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fixed-table .container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.fixed-table .row.flex-row {
+  margin: 0;
+}
+
+.fixed-table h1 {
+  text-align: left;
+  font: normal normal 32px/44px Gotham-Medium;
+  letter-spacing: 0px;
+  color: #000000cc;
+  opacity: 1;
+}.fixed-table h1.title-left {
+  text-align: left;
+}
+.fixed-table h1.title-right {
+  text-align: right;
+}
+.fixed-table h1.title-center {
+  text-align: center;
+}
+.fixed-table .table-orange {
+  text-align: center;
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.fixed-table .table-orange  table{
+  margin: 0 auto;
+}
+
+.fixed-table .table-orange th {
+  background: var(--unnamed-color-f18e00) 0% 0% no-repeat padding-box;
+  border: 2px solid var(--unnamed-color-ffffff);
+  background: #f18e00 0% 0% no-repeat padding-box;
+  border: 2px solid #ffffff;
+  min-width: 277px;
+  height: 68px;
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  font: normal normal 20px/28px Gotham-Medium;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.fixed-table .table-orange tr {
+  text-align: center;
+  font: normal normal 18px/26px Gotham-Book;
+  letter-spacing: 0px;
+  color: #000000cc;
+  opacity: 1;
+  height: 45px;
+}
+
+.fixed-table .table-orange tr:nth-child(even) {
+  background-color: #f9a1410f;
+}
+
+.fixed-table .table-notes {
+  padding: 32px 0;
+  max-width: 760px;
+
+}
+.fixed-table .table-notes.notes-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+.fixed-table .table-notes.notes-center {
+  margin: 0 auto;
+}
+.fixed-table .table-notes.notes-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.fixed-table .table-notes .table-note {
+  padding: 0 0 32px 0;
+  text-align: left;
+  font: italic normal 16px/22px Gotham-Book;
+  letter-spacing: 0px;
+  color: #000000cc;
+  opacity: 1;
+}
+@media (max-width: 1179px) {
+  .fixed-table .table-orange {
+    overflow-x: auto;
+  }
+}
+@media (max-width: 779px) {
+  .fixed-table h1 {
+    font: normal normal 24px/32px Gotham-Medium;
+  }
+  .fixed-table .table-orange th {
+    font: normal normal 18px/26px Gotham-Medium;
+    min-width: 170px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .fixed-table .table-notes .table-note {
+    font: italic normal 14px/24px Gotham-Book;
+  }
+  .fixed-table .table-orange {
+    /* width: 960px; */
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}

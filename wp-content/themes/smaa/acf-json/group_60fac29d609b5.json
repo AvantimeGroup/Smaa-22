@@ -1,0 +1,167 @@
+{
+    "key": "group_60fac29d609b5",
+    "title": "Block: Text Content 60\/40 left",
+    "fields": [
+        {
+            "key": "field_62ab0ef402eee",
+            "label": "LTL eller RTL",
+            "name": "ltl_rtl",
+            "type": "radio",
+            "instructions": "Default LTL för Latin språk\r\nFör arabiska och liknad höger styrde språk välja RTL",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "LTL": "LTL",
+                "RTL": "RTL"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "LTL",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_61dc3c2803e8c",
+            "label": "Bakgrundsfärg",
+            "name": "block_bakgrund",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "white": "Vit",
+                "gray": "Grå"
+            },
+            "allow_null": 0,
+            "default_value": "white",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_61964aebea7e4",
+            "label": "Dekoration",
+            "name": "decoration",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "alt1": "Två ringar",
+                "alt2": "Cirkel + ikon",
+                "no": "Ingen"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_61964bd9ea7e5",
+            "label": "Stor ikon",
+            "name": "stor_ikon",
+            "type": "font-awesome",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61964aebea7e4",
+                        "operator": "==",
+                        "value": "alt2"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "icon_sets": [
+                "fas",
+                "far"
+            ],
+            "custom_icon_set": "",
+            "default_label": "",
+            "default_value": "",
+            "save_format": "element",
+            "allow_null": 0,
+            "show_preview": 1,
+            "enqueue_fa": 1,
+            "fa_live_preview": "",
+            "choices": []
+        },
+        {
+            "key": "field_60fac2b9e954d",
+            "label": "Titel",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_60fac2d5e954e",
+            "label": "Brödtext",
+            "name": "paragraph_1",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/sixty-fourty-text-left"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1655378407
+}

@@ -1,0 +1,16 @@
+.smaa-list-items{
+    @include section($color-ghost-white);
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+		margin-bottom:50px;
+        li{
+            width: 48%;
+            a{@include links($color-primary, $color-link-primary-hover);}
+        }
+        @include media-breakpoint-down(sm){
+            li{width: 100%;}
+        }
+    }
+}

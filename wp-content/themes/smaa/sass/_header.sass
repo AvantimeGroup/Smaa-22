@@ -1,0 +1,105 @@
+
+header.main
+
+    +dropshadow
+    .navbar, .btn
+        font-size: 0.875rem !important //0.875 = 14px with 16px baseline
+    // Make navbar fixed
+    position: fixed
+    z-index: 1000
+    width: 100%
+    background: $white
+    //padding-bottom: 1rem        
+    @include media-breakpoint-up(md)  
+        min-height: 3rem // TODO: adjust to dynamic when time allows
+        //margin-top: -5rem // Cancel out page top margin 
+
+    //min-height: 5rem // TODO: adjust to dynamic when time allows
+    //margin-top: -8.5rem // Cancel out page top margin 
+
+    .header-inner
+        padding-bottom: 1rem
+        @include media-breakpoint-up(md)  
+            border-bottom: 5px solid $smaa-orange
+
+        @include media-breakpoint-down(sm)  
+            padding: 0 0.25rem
+
+    @include media-breakpoint-down(sm)  
+        .btn
+            padding: 0
+
+    .btn-register
+            background: $smaa-orange
+            border-radius: 0
+            padding: 1rem
+            //margin-bottom: 1rem
+            background-color: #F18E00
+    
+    @include media-breakpoint-down(sm)	
+        padding-bottom: 0
+        .block-nav
+            .btn
+                font-size: 0.6rem
+                text-align: center
+                img, span
+                    display: block
+                    margin: auto
+        ul
+            padding: 0        
+        .navbar
+            padding: 0
+
+
+    @include media-breakpoint-down(sm)	
+        .btn
+            font-size: 0.6rem
+            text-align: center
+            img, span
+                display: block
+                margin: auto
+
+    @include media-breakpoint-up(sm)    
+        .block-nav
+            //margin-top: 1rem
+            &:before
+                content: ' '
+                display: block
+                margin-left: calc(50% - 50vw)
+                margin-right: calc(50% - 50vw)
+                //border-top: 6px solid rgba(240, 140, 0, 0.7)
+
+    .expanded-nav
+        padding: 0
+        width: 100%
+           
+    .logo
+        @include media-breakpoint-up(md)	
+            height: 2.4375rem
+        @include media-breakpoint-down(sm)
+            height: 2.2rem
+            margin-top: -0.5rem
+
+
+#main-nav
+    @include media-breakpoint-up(sm)
+    //+dropshadow
+    > ul
+        padding-bottom: 3rem
+ 
+
+.navbar-wrapper
+    +fixed-header
+
+#header-translate
+    +fixed-header
+
+html.translated-ltr
+    #translate-icon *
+        color: $smaa-orange
+        
+#translate-icon
+    @include media-breakpoint-down(sm)
+        font-size: 0.7rem!important
+        .nav-label
+            margin-top: 5px;
